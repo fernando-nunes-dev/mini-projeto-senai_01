@@ -15,17 +15,14 @@ Três opções de avatar/árvore:
 Interface muda de cor com base na árvore escolhida.
 Objeto de usuário criado em JSON para posterior envio ao back-end.
 Modo de usuário salvo em localStorage.
+
 🛠️ Tecnologias Utilizadas
 HTML5
 CSS3
 JavaScript (ES6)
 LocalStorage
-📁 Estrutura de Pastas (exemplo)
-/mini-projeto-reflorestamento ├── index.html ├── style.css ├── script.js ├── README.md
 
 🚧 Observações
 Não há persistência real de dados (back-end/banco de dados).
 Dados fake podem ser utilizados para testes.
 O projeto pode ser expandido futuramente com autenticação e integração com banco de dados.
-👨‍💻 Desenvolvido por
-Anna Gomes e Fernando Nunes .
