@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar conta</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="app-container" class="unselected-theme">
+      <main>
+        <div class="left-side">
+          <div class="presentation">
+            <h2>Seja bem vindo!!</h2>
+            <div>
+              <h1>
+                <span> Crie sua conta em poucos passos. </span>
+                <strong>Vamos começar?</strong>
+              </h1>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div class="line">
+              <hr />
+            </div>
+            <div>
+              <span>Preencha os dados...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <h2>Dados básicos</h2>
+          <div class="form-container">
+            <form>
+              <div class="fields-container">
+                <div id="username-input">
+                  <div class="input-container">
+                    <span class="icon-content">
+                      <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" id="username" placeholder=" " required />
+                    <label for="username">Usuário</label>
+                  </div>
+                  <div class="input-error-container"></div>
+                </div>
+
+                <div id="password-input">
+                  <div class="input-container">
+                    <span class="icon-content">
+                      <i class="fa-solid fa-key"></i>
+                    </span>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="password">Senha</label>
+                  </div>
+                  <div class="input-error-container"></div>
+                </div>
+
+                <div id="confirm-password-input">
+                  <div class="input-container">
+                    <span class="icon-content">
+                      <i class="fa-solid fa-key"></i>
+                    </span>
+                    <input
+                      type="password"
+                      id="confirm-password"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="confirm-password">Confirmar senha</label>
+                  </div>
+                  <div class="input-error-container"></div>
+                </div>
+              </div>
+
+              <div id="theme-input">
+                <div class="theme-color-container">
+                  <span>Tema (cor): </span>
+                  <div class="radio-group">
+                    <div>
+                      <input
+                        type="radio"
+                        id="pau-brasil"
+                        name="theme"
+                        value="pau-brasil"
+                      />
+                      <label for="pau-brasil">
+                        <img src="../images/pau-brasil.webp" alt="pau Brasil" />
+                        <span>Pau Brasil</span>
+                      </label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        id="castanheira"
+                        name="theme"
+                        value="castanheira"
+                      />
+                      <label for="castanheira">
+                        <img
+                          src="../images/castanheira.webp"
+                          alt="castanheira"
+                        />
+                        <span>Castanheira</span>
+                      </label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        id="peroba-rosa"
+                        name="theme"
+                        value="peroba-rosa"
+                      />
+                      <label for="peroba-rosa">
+                        <img
+                          src="../images/peroba-rosa.webp"
+                          alt="Peroba Rosa"
+                        />
+                        <span>Perobra rosa</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-error-container"></div>
+              </div>
+
+              <div class="button-container">
+                <div>
+                  <button>Proximo</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/signup-first-step.js"></script>
+  </body>
+</html>

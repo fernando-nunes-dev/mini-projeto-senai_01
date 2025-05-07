@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ações de reflorestamento</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/reforestatation-actions.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="app-container" class="unselected-theme">
+      <aside>
+        <div>
+          <a href="./perfil-do-usuario.html">
+            <i class="fa-solid fa-user-large"></i>
+          </a>
+        </div>
+        <div>
+          <a href="./relatorio.html">
+            <i class="fa-solid fa-table"></i>
+          </a>
+        </div>
+        <div>
+          <a href="./destaques.html">
+            <i class="fa-solid fa-medal"></i>
+          </a>
+        </div>
+      </aside>
+      <div class="main-container">
+        <main>
+          <div class="top-content">
+            <div class="top-info-content">
+              <div>
+                <div>
+                  <p>
+                    <span> Nos conte sobre suas ações de </span>
+                    <strong>Reflorestamento</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="top-info-content-bottom">
+                <div class="line">
+                  <hr />
+                </div>
+                <div>
+                  <span>Preencha os dados...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-content">
+            <div>
+              <h2 class="bottom-content-title">Dados de reflorestamento</h2>
+            </div>
+            <div class="form-container">
+              <form>
+                <div class="fields-container">
+                  <div id="username-input">
+                    <div class="input-container">
+                      <span class="icon-content">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <input
+                        type="text"
+                        id="username"
+                        placeholder=" "
+                        required
+                        disabled
+                      />
+                      <label for="username">Usuário</label>
+                    </div>
+                    <div class="input-error-container"></div>
+                  </div>
+
+                  <div id="tree-quantity-input">
+                    <div class="input-container">
+                      <span class="icon-content">
+                        <i class="fa-solid fa-chart-simple"></i>
+                      </span>
+                      <input
+                        type="text"
+                        id="tree-quantity"
+                        placeholder=" "
+                        required
+                      />
+                      <label for="tree-quantity"> Arvores plantadas </label>
+                    </div>
+                    <div class="input-error-container"></div>
+                  </div>
+
+                  <div id="tree-type-input">
+                    <div class="select-container">
+                      <div class="select-input-container">
+                        <span class="icon-content">
+                          <i class="fa-brands fa-pagelines"></i>
+                        </span>
+                        <select id="tree-type" required>
+                          <option value="null">--Selecione--</option>
+                          <option value="ipes">Ipês</option>
+                          <option value="angicos">Angicos</option>
+                          <option value="aroeiras">Aroeiras</option>
+                          <option value="jequitibas">Jequitibás</option>
+                          <option value="peroba-do-campo">
+                            Peroba do campo
+                          </option>
+                        </select>
+                      </div>
+                      <label for="tree-type">Espécie da arvore</label>
+                    </div>
+                    <div class="input-error-container"></div>
+                  </div>
+                </div>
+
+                <div class="reforestation-items">
+                  <div></div>
+                </div>
+
+                <div class="button-container">
+                  <div>
+                    <button>Salvar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="../js/set-background-theme-color.js"></script>
+    <script src="../js/reforestation-actions.js"></script>
+  </body>
+</html>

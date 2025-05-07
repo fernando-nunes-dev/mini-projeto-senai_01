@@ -1,0 +1,254 @@
+#app-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  transition: background-image 0.5s;
+}
+
+.unselected-theme {
+  background-image: linear-gradient(
+    to right,
+    #ffb555,
+    #efa043,
+    #e08b31,
+    #d0771f,
+    #c0620b
+  );
+}
+
+.pau-brasil {
+  background-image: linear-gradient(
+    to right,
+    #ff5555,
+    #f04f43,
+    #e04a32,
+    #d04620,
+    #c0420b
+  );
+}
+
+.castanheira {
+  background-image: linear-gradient(
+    to right,
+    #814212,
+    #894210,
+    #92410f,
+    #9b3f0f,
+    #a43d0f
+  );
+}
+
+.peroba-rosa {
+  background-image: linear-gradient(
+    to right,
+    #811256,
+    #920f48,
+    #9e1938,
+    #a42a26,
+    #a43d0f
+  );
+}
+
+aside {
+  width: 64px;
+  height: 100vh;
+  background-color: #202d36;
+  padding: 32px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+aside div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #e6e6e6;
+}
+
+aside div a i {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22.5px;
+  font-size: 20px;
+}
+
+.main-container {
+  width: calc(100vw - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container {
+  padding: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.bio-input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.input-content {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #999;
+}
+
+.icon-bio {
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 4px 8px;
+  font-size: 16px;
+  outline: none;
+  color: gray;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background: transparent;
+  padding: 0 4px;
+  color: #999;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+.input-container textarea + label {
+  position: absolute;
+  top: 28px;
+  left: 25px;
+  transform: translateY(-50%);
+  background: transparent;
+  padding: 0 4px;
+  color: #999;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container textarea:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container textarea:not(:placeholder-shown) + label {
+  top: 0;
+  left: -5px;
+  font-size: 12px;
+  color: #999;
+  transform: translateY(-40%) translateY(-8px);
+}
+
+.input-container textarea:focus + label,
+.input-container textarea:not(:placeholder-shown) + label {
+  top: 14px;
+  left: 5px;
+}
+
+.select-container {
+  position: relative;
+}
+
+.select-container label {
+  position: absolute;
+  background: transparent;
+  padding: 0 4px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+  top: 0;
+  left: -5px;
+  font-size: 12px;
+  color: #999;
+  transform: translateY(-40%) translateY(-8px);
+}
+
+.select-input-container {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.select-input-container select {
+  padding: 4px 8px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  color: #999;
+}
+
+.input-error-container {
+  height: 16px;
+  padding-left: 6px;
+  color: rgb(185, 32, 32);
+  font-size: 12px;
+  position: relative;
+}
+
+.input-error-container p {
+  position: absolute;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-container div {
+  align-self: center;
+}
+
+.button-container div button {
+  padding: 8px 24px;
+  background-color: #e08b31;
+  color: #fff;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-container div button:hover {
+  background-color: #efa043;
+}
+
+@media (max-width: 800px) {
+  aside {
+    display: none;
+  }
+
+  .form-container {
+    padding: 25px 16px;
+  }
+}

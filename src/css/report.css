@@ -1,0 +1,98 @@
+#app-container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  align-self: center;
+  width: 60vw;
+  height: 80vh;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  padding: 32px;
+  overflow: auto;
+}
+
+.content div h2 {
+  text-align: center;
+  color: gray;
+  font-weight: 400;
+}
+
+.report-container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.table-content {
+  height: 500px;
+  overflow-y: auto;
+  width: 100%;
+  border: 1px solid #dddddd;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  align-self: center;
+  width: 100%;
+  position: relative;
+}
+
+thead th {
+  top: 0;
+  position: sticky;
+  background-color: #e6e6e6;
+  z-index: 20;
+  color: #274e73;
+}
+
+td,
+th {
+  padding: 8px;
+}
+
+td {
+  text-align: left;
+  z-index: 1;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.no-data-found {
+  padding: 32px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  #app-container {
+    padding: 0px;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e6e6;
+    border-radius: 0px;
+    padding: 16px;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+}

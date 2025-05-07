@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="app-container" class="unselected-theme">
+      <aside>
+        <div>
+          <a href="./acoes-reflorestamento.html">
+            <i class="fa-solid fa-tree"></i>
+          </a>
+        </div>
+        <div>
+          <a href="./relatorio.html">
+            <i class="fa-solid fa-table"></i>
+          </a>
+        </div>
+        <div>
+          <a href="./destaques.html">
+            <i class="fa-solid fa-medal"></i>
+          </a>
+        </div>
+      </aside>
+      <div class="main-container">
+        <main>
+          <div class="content">
+            <div>
+              <h2 class="content-title">Dados de perfil</h2>
+            </div>
+            <div class="form-container">
+              <div class="avatar-container">
+                <div>
+                  <img
+                    src="../images/pau-brasil.webp"
+                    alt="pau Brasil"
+                    class="avatar-image"
+                  />
+                </div>
+              </div>
+              <form>
+                <div class="fields-container">
+                  <div id="username-input">
+                    <div class="input-container">
+                      <span class="icon-content">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <input
+                        type="text"
+                        id="username"
+                        placeholder=" "
+                        required
+                        disabled
+                      />
+                      <label for="username">Usuário</label>
+                    </div>
+                    <div class="input-error-container"></div>
+                  </div>
+
+                  <div id="bio-input">
+                    <div class="input-container bio-input">
+                      <span class="icon-content icon-bio">
+                        <i class="fa-solid fa-clipboard-user"></i>
+                      </span>
+                      <textarea
+                        id="bio"
+                        placeholder=" "
+                        rows="3"
+                        required
+                      ></textarea>
+                      <label for="username">Bio</label>
+                    </div>
+                    <div class="input-error-container"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="forest-quantity">
+                    <span>Arvores plantadas:</span>
+                    <strong id="forest-quantity-input">---</strong>
+                  </p>
+                </div>
+
+                <div class="button-container">
+                  <div>
+                    <button>Salvar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="../js/set-background-theme-color.js"></script>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>

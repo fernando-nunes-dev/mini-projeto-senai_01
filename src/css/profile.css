@@ -1,0 +1,89 @@
+#app-container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  align-self: center;
+  width: 60vw;
+  height: 80vh;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  padding: 32px;
+  overflow: auto;
+}
+
+.content div h2 {
+  text-align: center;
+  color: gray;
+  font-weight: 400;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  margin-top: 32px;
+  width: 100%;
+  max-width: 500px;
+  align-self: center;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar-container div {
+  align-self: center;
+}
+
+.avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+}
+
+.forest-quantity {
+  color: #999;
+}
+
+@media (max-width: 800px) {
+  #app-container {
+    padding: 0px;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e6e6;
+    border-radius: 0px;
+    padding: 16px;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .button-container div {
+    width: 100%;
+  }
+
+  .button-container div button {
+    width: 100%;
+    padding: 15px;
+  }
+}
