@@ -31,3 +31,6 @@ O projeto simula um ambiente de desenvolvimento real, incentivando a autonomia d
 - Não há persistência real de dados (back-end/banco de dados).
 - Dados fake podem ser utilizados para testes.
 - O projeto pode ser expandido futuramente com autenticação e integração com banco de dados.
+
+
+Link vídeo: https://drive.google.com/file/d/1XVoVUPP-U770SUP5NOcEAK_0Fivmi2KE/view?usp=drive_link
